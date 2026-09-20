@@ -1,0 +1,376 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+    color: #222222;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   MAIN STORY CONTAINER
+========================================= */
+
+.story {
+    width: min(920px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 60px 0 80px;
+}
+
+
+/* =========================================
+   STORY HEADER
+========================================= */
+
+.story-header {
+    margin-bottom: 35px;
+}
+
+.story-header h1 {
+    margin: 0 0 18px;
+
+    max-width: 900px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 6vw, 64px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #111111;
+}
+
+.dek {
+    max-width: 850px;
+
+    margin: 0 0 22px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.45;
+
+    color: #666666;
+}
+
+.story-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 18px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dddddd;
+}
+
+.byline,
+.date {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #555555;
+}
+
+.byline {
+    color: #222222;
+}
+
+.date {
+    color: #777777;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+    width: 100%;
+
+    margin: 0 0 42px;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 2px;
+}
+
+.hero-image figcaption {
+    margin-top: 10px;
+
+    padding-left: 2px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   STORY SECTIONS
+========================================= */
+
+.story-section {
+    max-width: 760px;
+
+    margin: 0 auto 46px;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.story-section h2 {
+    margin: 0 0 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.story-section p {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+
+    line-height: 1.72;
+
+    color: #292929;
+}
+
+.story-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CHARTS
+========================================= */
+
+.chart {
+    width: 100%;
+
+    margin: 32px 0 38px;
+
+    padding: 0;
+}
+
+
+/* GRAPH 1 / GRAPH 2 etc. */
+
+.graph-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 5px 9px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    line-height: 1;
+}
+
+
+.chart img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+}
+
+.chart figcaption {
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #555555;
+}
+
+.chart figcaption strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    color: #222222;
+}
+
+.chart figcaption span {
+    color: #777777;
+}
+
+
+/* =========================================
+   METHODOLOGY
+========================================= */
+
+.methodology {
+    margin-top: 65px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #dddddd;
+}
+
+.methodology h2 {
+    font-size: 26px;
+}
+
+.methodology p {
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    color: #666666;
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.story-tags {
+    max-width: 760px;
+
+    margin: 50px auto 0;
+
+    padding-top: 24px;
+
+    border-top: 1px solid #dddddd;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.story-tags span {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+
+    color: #555555;
+
+    background: #fafafa;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .story {
+        width: min(100% - 28px, 920px);
+
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .story-header h1 {
+        font-size: 40px;
+
+        letter-spacing: -0.8px;
+    }
+
+    .dek {
+        font-size: 18px;
+    }
+
+    .story-meta {
+        display: block;
+    }
+
+    .date {
+        margin-top: 5px;
+    }
+
+    .story-section {
+        width: 100%;
+
+        margin-bottom: 38px;
+    }
+
+    .story-section h2 {
+        font-size: 28px;
+    }
+
+    .story-section p {
+        font-size: 17px;
+
+        line-height: 1.65;
+    }
+
+    .hero-image {
+        margin-bottom: 32px;
+    }
+
+    .chart {
+        margin-top: 28px;
+        margin-bottom: 32px;
+    }
+
+}
